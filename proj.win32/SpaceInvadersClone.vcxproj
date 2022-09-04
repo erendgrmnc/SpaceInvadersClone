@@ -1,0 +1,949 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{886BC6CC-8329-3EF6-A143-5818D9854520}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>SpaceInvadersClone</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\bin\SpaceInvadersClone\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SpaceInvadersClone.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SpaceInvadersClone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\bin\SpaceInvadersClone\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SpaceInvadersClone.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SpaceInvadersClone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\bin\SpaceInvadersClone\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SpaceInvadersClone.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SpaceInvadersClone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\bin\SpaceInvadersClone\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SpaceInvadersClone.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SpaceInvadersClone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/Box2D/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/chipmunk/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/bullet/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/bullet/include/bullet" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/jpeg/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/uv/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/webp/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/websockets/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/curl/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/png/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/icon/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/glfw3/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\include\win32\freetype2;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include\bullet;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\include\OGLES;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\include\win32\freetype2;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include\bullet;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\include\OGLES;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/uv/prebuilt/win32/uv.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\prebuilt\win32\libwebp.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\prebuilt\win32\websockets.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\prebuilt\win32\libssl.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\prebuilt\win32\libcurl.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\prebuilt\win32\libpng.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/MyProjects/SpaceInvadersClone/proj.win32/Debug/SpaceInvadersClone.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Debug/SpaceInvadersClone.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/Box2D/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/chipmunk/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/bullet/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/bullet/include/bullet" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/jpeg/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/uv/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/webp/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/websockets/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/curl/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/png/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/icon/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/glfw3/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\include\win32\freetype2;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include\bullet;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\include\OGLES;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\include\win32\freetype2;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include\bullet;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\include\OGLES;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/uv/prebuilt/win32/uv.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\prebuilt\win32\libwebp.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\prebuilt\win32\websockets.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\prebuilt\win32\libssl.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\prebuilt\win32\libcurl.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\prebuilt\win32\libpng.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/MyProjects/SpaceInvadersClone/proj.win32/Release/SpaceInvadersClone.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/Release/SpaceInvadersClone.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/Box2D/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/chipmunk/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/bullet/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/bullet/include/bullet" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/jpeg/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/uv/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/webp/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/websockets/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/curl/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/png/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/icon/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/glfw3/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\include\win32\freetype2;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include\bullet;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\include\OGLES;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\include\win32\freetype2;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include\bullet;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\include\OGLES;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/uv/prebuilt/win32/uv.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\prebuilt\win32\libwebp.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\prebuilt\win32\websockets.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\prebuilt\win32\libssl.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\prebuilt\win32\libcurl.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\prebuilt\win32\libpng.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/MyProjects/SpaceInvadersClone/proj.win32/MinSizeRel/SpaceInvadersClone.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/MinSizeRel/SpaceInvadersClone.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/Box2D/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/chipmunk/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/bullet/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/bullet/include/bullet" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/jpeg/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/uv/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/webp/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/websockets/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/curl/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/png/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/icon/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/glfw3/include/win32" /external:I "E:/MyProjects/SpaceInvadersClone/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\include\win32\freetype2;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include\bullet;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\include\OGLES;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MyProjects\SpaceInvadersClone\Classes;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\include;E:\MyProjects\SpaceInvadersClone\cocos2d;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\recast\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\tinyxml2\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxhash\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\xxtea\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\clipper\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\edtaa3func\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\ConvertUTF\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\poly2tri\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\md5\..;E:\MyProjects\SpaceInvadersClone\cocos2d\external\unzip\.;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\include\win32\freetype2;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\include\bullet;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\include\OGLES;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\include;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\include\win32;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/uv/prebuilt/win32/uv.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/MyProjects/SpaceInvadersClone/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\webp\prebuilt\win32\libwebp.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\websockets\prebuilt\win32\websockets.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\prebuilt\win32\libssl.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\curl\prebuilt\win32\libcurl.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\png\prebuilt\win32\libpng.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;E:\MyProjects\SpaceInvadersClone\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/MyProjects/SpaceInvadersClone/proj.win32/RelWithDebInfo/SpaceInvadersClone.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MyProjects/SpaceInvadersClone/proj.win32/bin/SpaceInvadersClone/RelWithDebInfo/SpaceInvadersClone.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\MyProjects\SpaceInvadersClone\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/MyProjects/SpaceInvadersClone/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MyProjects/SpaceInvadersClone -BE:/MyProjects/SpaceInvadersClone/proj.win32 --check-stamp-file E:/MyProjects/SpaceInvadersClone/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeCCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/MyProjects/SpaceInvadersClone/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MyProjects/SpaceInvadersClone -BE:/MyProjects/SpaceInvadersClone/proj.win32 --check-stamp-file E:/MyProjects/SpaceInvadersClone/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeCCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/MyProjects/SpaceInvadersClone/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MyProjects/SpaceInvadersClone -BE:/MyProjects/SpaceInvadersClone/proj.win32 --check-stamp-file E:/MyProjects/SpaceInvadersClone/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeCCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/MyProjects/SpaceInvadersClone/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MyProjects/SpaceInvadersClone -BE:/MyProjects/SpaceInvadersClone/proj.win32 --check-stamp-file E:/MyProjects/SpaceInvadersClone/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\MyProjects\SpaceInvadersClone\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeCCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\3.24.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\AppDelegate.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\Config.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\GameScene.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\Player.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\BackgroundManager.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\Bullet.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\Enemy.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\EnemySpawner.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\RedEnemy.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\BlueEnemy.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\PlayerBullet.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\BulletController.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\GameOverScene.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\UIManager.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\MainMenu.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\SceneManager.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Classes\DataManager.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\proj.win32\main.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\proj.win32\resource.h" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\AppDelegate.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\GameScene.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\Player.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\BackgroundManager.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\Bullet.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\Enemy.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\EnemySpawner.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\RedEnemy.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\BlueEnemy.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\PlayerBullet.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\BulletController.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\GameOverScene.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\UIManager.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\MainMenu.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\SceneManager.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\Classes\DataManager.cpp" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\proj.win32\main.cpp" />
+    <ResourceCompile Include="E:\MyProjects\SpaceInvadersClone\proj.win32\game.rc" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Backgrounds\bg_front_spacedust.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Backgrounds\bg_galaxy.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Backgrounds\bg_planetsunrise.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Backgrounds\bg_spacialanomaly.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Backgrounds\bg_spacialanomaly2.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Backgrounds\spaceBg.jpg" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Classes\CCParallaxNode-Extras.h" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Classes\CCParallaxNode-Extras.m" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\CloseNormal.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\CloseSelected.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\HelloWorld.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Particles\Stars1.plist" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Particles\Stars2.plist" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Particles\Stars3.plist" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Sounds\SpaceGame.caf" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Sounds\explosion_large.caf" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Sounds\explosion_small.caf" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Sounds\laser_enemy.caf" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Sounds\laser_ship.caf" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Sounds\powerup.caf" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Sounds\shake.caf" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\SpaceShip.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Spritesheets\Sprites.plist" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\Spritesheets\Sprites.pvr.ccz" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\blueenemy.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\fonts\Arial.fnt" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\fonts\Arial.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\fonts\arial.ttf" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\homebutton.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\laser.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\lumbee_heights.mp3" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\playbutton.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\redenemy .png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\redenemy.png" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\res\.gitkeep" />
+    <ClInclude Include="E:\MyProjects\SpaceInvadersClone\Resources\retrybutton.png" />
+    <ClCompile Include="E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{41DDE3FF-6BA3-320F-957F-963EDDDFA8A0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\SYNC_RESOURCE-SpaceInvadersClone.vcxproj">
+      <Project>{3F99A617-3800-348C-836A-3CF70D059630}</Project>
+      <Name>SYNC_RESOURCE-SpaceInvadersClone</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{BF0F5E57-75FB-3D85-AE83-C452475B0F1D}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{0C748BE4-EAEB-3B25-8031-17689525C4DC}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{FCC1D822-61AA-3E58-B7BF-0C37C1097741}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{0350E221-354F-38DD-ACB4-A20E3DE93049}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{92421776-23EB-30C1-8450-ED0BE5F4D29F}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{770E9303-4E0C-3812-BA16-E29B2218FC82}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{9A7FE26C-D6B7-311B-A069-B1EBBA3928ED}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{6106E040-CAAE-384F-86E2-5D118F5FDD10}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{174A1383-D2D3-3C7D-BDCD-81CAD3D0DBD7}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{11342759-19D5-3A3F-9573-254D6B849CAA}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{BC7B96E8-58CE-3D72-BC0D-DC420AB9C7C9}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\external.vcxproj">
+      <Project>{62C44AF2-3281-311B-BB55-74CA1C769BE9}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

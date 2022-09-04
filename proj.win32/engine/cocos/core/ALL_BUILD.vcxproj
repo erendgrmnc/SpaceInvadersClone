@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E28EE41-E1F1-3B06-AA06-78D47B86EB4F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/MyProjects/SpaceInvadersClone/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MyProjects/SpaceInvadersClone -BE:/MyProjects/SpaceInvadersClone/proj.win32 --check-stamp-file E:/MyProjects/SpaceInvadersClone/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\2d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\3d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\math\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\navmesh\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\network\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\physics\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\physics3d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\renderer\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\ui\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/MyProjects/SpaceInvadersClone/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MyProjects/SpaceInvadersClone -BE:/MyProjects/SpaceInvadersClone/proj.win32 --check-stamp-file E:/MyProjects/SpaceInvadersClone/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\2d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\3d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\math\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\navmesh\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\network\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\physics\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\physics3d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\renderer\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\ui\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/MyProjects/SpaceInvadersClone/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MyProjects/SpaceInvadersClone -BE:/MyProjects/SpaceInvadersClone/proj.win32 --check-stamp-file E:/MyProjects/SpaceInvadersClone/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\2d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\3d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\math\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\navmesh\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\network\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\physics\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\physics3d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\renderer\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\ui\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/MyProjects/SpaceInvadersClone/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MyProjects/SpaceInvadersClone -BE:/MyProjects/SpaceInvadersClone/proj.win32 --check-stamp-file E:/MyProjects/SpaceInvadersClone/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\2d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\3d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\audio\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\base\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\math\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\navmesh\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\network\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\physics\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\physics3d\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\platform\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\renderer\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\cocos\ui\CMakeLists.txt;E:\MyProjects\SpaceInvadersClone\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MyProjects\SpaceInvadersClone\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{41DDE3FF-6BA3-320F-957F-963EDDDFA8A0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{BF0F5E57-75FB-3D85-AE83-C452475B0F1D}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{0C748BE4-EAEB-3B25-8031-17689525C4DC}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{FCC1D822-61AA-3E58-B7BF-0C37C1097741}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{0350E221-354F-38DD-ACB4-A20E3DE93049}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{92421776-23EB-30C1-8450-ED0BE5F4D29F}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{770E9303-4E0C-3812-BA16-E29B2218FC82}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{9A7FE26C-D6B7-311B-A069-B1EBBA3928ED}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{6106E040-CAAE-384F-86E2-5D118F5FDD10}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{174A1383-D2D3-3C7D-BDCD-81CAD3D0DBD7}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{11342759-19D5-3A3F-9573-254D6B849CAA}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{BC7B96E8-58CE-3D72-BC0D-DC420AB9C7C9}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MyProjects\SpaceInvadersClone\proj.win32\engine\external\external.vcxproj">
+      <Project>{62C44AF2-3281-311B-BB55-74CA1C769BE9}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
